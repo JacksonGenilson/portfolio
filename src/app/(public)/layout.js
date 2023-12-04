@@ -1,20 +1,19 @@
 import { Inter } from 'next/font/google';
-import '@/css/globals.css';
+import css from '@/css/variables.module.scss'
+import '@/css/globals.scss';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'R runner',
-	description: 'Run a R script',
+	title: 'Jackson Genilson Sinhori',
+	description: 'My humble portfolio',
 }
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<main className="flex min-h-screen items-start justify-center p-6">
-					{children}
-				</main>
+				{children}
 			</body>
 		</html>
 	)

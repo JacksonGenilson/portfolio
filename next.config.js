@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
+const path = require('path');
+
 const nextConfig = {
+	sassOptions: {
+		includePaths: [path.join(__dirname, 'styles')],
+	},
 	eslint: {
-        // Reference: https://nextjs.org/docs/app/building-your-application/configuring/eslint#linting-custom-directories-and-files
-        // Include __tests__ in the default list of directories.
-        dirs: ["app", "components", "src", "__tests__"],
-    },
+		dirs: ["app", "components", "src"],
+	},
 }
 
 module.exports = nextConfig
