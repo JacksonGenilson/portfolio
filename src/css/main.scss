@@ -1,0 +1,34 @@
+body {
+	margin: 0;
+	font-family: "Tolkien", "Runes", "Ringbearer", "Aniron", "Bilbo-Hands";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+*{
+	outline: none !important;
+	font-family: "Aniron";
+	&:focus{
+		outline: none !important;
+	}
+}
+
+::-webkit-scrollbar-track{
+	border-radius: 10px;
+	width: 5px;
+}
+
+::-webkit-scrollbar{
+	width: 5px;
+	background-color: #00000000;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #00000033;
+}

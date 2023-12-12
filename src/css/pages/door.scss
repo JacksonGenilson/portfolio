@@ -1,0 +1,40 @@
+.door{
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	background-color: #000;
+	.box{
+		height: 70%;
+		display: flex;
+		align-items: center;
+		.svg-door{
+			max-width: 100%;
+			max-height: 100%;
+			display: none;
+			path{
+				transform: translate(-367.37988px, 174.76418px);
+				stroke-dasharray: 10000;
+				stroke-dashoffset: 10000;
+				filter: url(#glow);
+				fill: #ccf9ff;
+				stroke: #024d76;
+				stroke-width: 1;
+				fill-opacity: 0;
+			}
+			&.active{
+				display: block;
+				path{
+					animation: doors 7s forwards;
+				}
+			}
+		}
+		.custom-button{
+			animation: blink 2s linear infinite;
+			display: none;
+			&.active{
+				display: block;
+			}
+		}
+	}
+}

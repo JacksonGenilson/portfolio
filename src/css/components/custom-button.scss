@@ -1,0 +1,35 @@
+.custom-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	a,
+	button{
+		border: none;
+		background: none;
+		font-size: 18px;
+		cursor: pointer;
+		position: relative;
+		color: #333;
+		text-decoration: none;
+		.curve{
+			position: absolute;
+			display: block;
+			width: 70%;
+			height: 100%;
+			top: 100%;
+			path{
+				fill: #ccf9ff;
+				stroke: #024d76;
+				stroke-width: 1;
+			}
+			&.curve1{
+				left: 0;
+				transform: scaleX(-1);
+			}
+			&.curve2{
+				right: 0;
+			}
+		}
+	}
+}

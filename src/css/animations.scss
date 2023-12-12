@@ -1,0 +1,25 @@
+.hero{
+	&-left{
+		transform: translateX(-50px);
+	}
+	&-right{
+		transform: translateX(50px);
+	}
+	&-fade-in{
+		opacity: 0;
+	}
+	&-up{
+		transform: translateY(50px);
+	}
+	&-down{
+		transform: translateY(-50px);
+	}
+    opacity: 0;
+    transition: all ease .3s;
+    &.active{
+        transform: translateX(0px) !important;
+        transform: translateY(0px) !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
